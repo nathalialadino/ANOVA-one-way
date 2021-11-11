@@ -40,6 +40,7 @@ datatotal7 = datatotal6[data2.cause != 'Pneumonia']
 datatotal8 = datatotal7[data2.cause != 'Diabetes Mellitus']
 Datatotal = datatotal8[data2.cause != 'AIDS']
 
+### IV1 - Age group
 aggregation_functions = {'Deaths': 'sum', 'age': 'first'}
 df_new2 = Datatotal.groupby(Datatotal['age']).aggregate(aggregation_functions)
 
