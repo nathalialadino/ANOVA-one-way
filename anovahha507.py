@@ -58,7 +58,6 @@ import statsmodels.formula.api as smf
 modela = smf.ols("Deaths ~ C(age)", data = df_new2).fit()
 stats.shapiro(modela.resid) 
 
-# ShapiroResult(statistic=0.9578123688697815, pvalue=0.7441322803497314)
 # ShapiroResult(statistic=0.9199321269989014, pvalue=0.3180749714374542)
 
 fig = plt.figure(figsize = (10, 10))
